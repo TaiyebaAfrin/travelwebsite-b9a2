@@ -353,6 +353,43 @@ section{
 }
 
 
+/* Deals & Discounts */
+
+.big-image-container{
+     background-image: url(images/tour1.png);
+     height: 500px;
+     background-repeat: no-repeat;
+     text-align: center;
+     justify-content: center;
+     margin: 0 auto;
+     background-position: center;
+     height: 500px;
+     border-radius: 16px;
+     padding-top: 150px;
+
+}
+
+/* Newsletter */
+.newsletter-container{
+     display: flex;
+     padding: 0px 60px;
+     gap: 30px;
+     
+}
+
+.contact-us{
+     border: 1px solid #131318;
+     border-radius: 16px;
+     height: 500px;
+     width: 60%;
+     padding: 20px;
+}
+
+.newsletter-container img{
+     width: 600px;
+     height: 500px;
+
+}
 
 
 
