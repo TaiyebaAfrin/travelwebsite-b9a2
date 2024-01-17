@@ -3,41 +3,34 @@
      font-family: 'Mulish', sans-serif;
      margin: 0;
      padding: 0;
-     text-decoration: none;
      box-sizing: border-box;
 }
 /* primary */
-
-.primary-title{
-     font-size: 40px;
-     font-weight: 800;
-     line-height: 50px;
-     text-align: center;
-}
-
-.primary-description{
-     font-size: 16px;
-     font-weight: 400;
-     line-height: 26px;
-     text-align: center;
-
-}
-
-.btn-primary{
-     font-size: 20px;
-     font-weight: 800;
-     line-height: 25px;
-     text-align: center;
-}
+h1{color: var(--primary);}
+h2{color: var(--secondary-title);}
 
 :root {
      --primary: #FFFFFF;
-     --secondary: #131318;
-     --primary: #131318B2;
-     --secondary: #5A5A5D;
+     --secondary-title: #131318;
+     --primary-des: #131318B2;
+     --secondary-des: #5A5A5D;
      --accent: #FF5400;
      --navmenu:#424247;
    }
+
+.btn-primary{
+     font-size: 18px;
+     font-weight: 800;
+     line-height: 25px;
+     text-align: center;
+     background-color: var(--accent);
+     border-radius: 8px;
+     border:none;
+     color: var(--primary);
+     padding: 12px 34px;
+}
+
+
 
    /* body{
      max-width: 1440px;
@@ -46,7 +39,10 @@
 
 /* primary end */
 /* navbar start */
-
+body{
+     max-width: 1440px;
+     margin: auto;
+}
 header{
      max-width: 1440px;
      /* text-align: center;
@@ -54,7 +50,7 @@ header{
      margin: auto;
 }
 
-li{
+.navbar li{
      list-style: none;
 }
 
@@ -67,8 +63,13 @@ a{
      display: flex;
      justify-content: space-between;
      align-items: center;
-     padding: 30px 80px;
+     padding: 30px 70px;
 }
+
+.nav-menu .activecolor{
+     color: #FF5400;
+}
+
 /* logo start */
 .logo{
      justify-content: space-between;
@@ -83,7 +84,7 @@ a{
 }
 
 .logotwo{
-          color: var(--accent);
+     color: var(--accent);
 
 }
 
@@ -122,15 +123,171 @@ a{
 
 /* navbar end */
 
+/* banner header */
+
+.banner{
+     padding: 0 70px;
+     text-align: center;
+     justify-content: center;
+    
+}
+.banner-content img{
+     width: 100%;
+
+ 
+}
+
+.banner-content{
+     background-image: linear-gradient(to bottom, rgba(19, 19, 24, 1), rgba(19, 19, 24, 0)), url(Images/group13.png);
+     background-repeat: no-repeat;
+     text-align: center;
+     justify-content: center;
+     margin: 0 auto;
+     background-position: center;
+     height: 500px;
+     border-radius: 16px;
+     padding-top: 150px;
+}
+
+.banner-title{
+     font-family: Mulish;
+     font-size: 64px;
+     font-weight: 800;
+     line-height: 80px;
+     padding-bottom: 30px;
+}
+.primary-description{
+     font-family: Mulish;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 26px;
+     letter-spacing: 0em;
+     text-align: center;
+     padding-bottom: 40px;
+     color: var(--primary);
+}
+
+/* input container */
+.input-container{
+     display: flex;
+     gap: 30px;
+     text-align: center;
+     justify-content: center;
+
+}
+
+input{
+     border: none;
+     padding: 5px;
+}
+.input-item{
+     background-color: var(--primary);
+     border-radius: 8px;
+     padding: 8px;
+}
+/* .input-item{
+     padding-right: 20px;
+} */
+/* id input */
+#inputbutton{
+     background-color: #FF5400;
+}
+#inputbutton input{
+     background-color: #FF5400;
+}
+
+#inputbutton i {
+     color: #FFFFFF;
+     padding-left: 10px;
+}
+
+#inputbutton ::placeholder{
+     color: #FFFFFF;
+}
+
+/* id input end */
+
+section{
+     margin-top: 70px;
+}
+/* popular */
+.popular-container{
+     display: flex;
+     padding: 30px 70px;
+
+}
+
+.text-popular-content{
+     padding-right: 20px;
+}
+.popular-container img{
+     width: 550px;
+     height: 550px;
+}
+.popular-title{
+     font-family: Mulish;
+     font-size: 40px;
+     font-weight: 800;
+     line-height: 50px;
+     letter-spacing: 0em;
+     padding-bottom: 24px;
+}
+.popular-description{
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 26px;
+     color: #131318B2;
+     padding-bottom: 24px;
+}
+.popular-list-container{
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 26px;
+     color: #131318B2;
+     padding-bottom: 24px;
+     padding-left: 22px;
+
+}
+.popular-list-container li{
+     padding-bottom: 10px;
+}
+
+.popular-last-description{
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 26px;
+     padding-bottom: 24px;
+
+}
+
+
+/* popular end */
+
+/* destination */
+.Destination-container{
+     padding: 0px 70px;
+     text-align: center;
+     justify-content: center;
+}
+.img-one{
+     display: flex;
+     padding-top: 20px;
+     gap: 20px;
+}
+
+
+
+
 
 /* responsive for mobile */
-   @media screen and (max-width:600px) {
+   @media screen and (min-width:300px) and (max-width:600px){
 
      .primary-title{
           font-size: 20px;
           font-weight: 800;
           line-height: 25px;
           text-align: center;
+          color: #FFFFFF;
 
      }
      
@@ -139,6 +296,7 @@ a{
           font-weight: 400;
           line-height: 24px;
           text-align: left;
+          color: #FFFFFF;
      }
      
      .btn-primary{
@@ -177,10 +335,13 @@ a{
      }
      .nav-item{
           margin: 16px 0;
-     }
-     .nav-item{
           left: 0;
+          padding-bottom: 10px;
+
      }
+
+
+
        /* nav end */
 
 /* logo start */
@@ -193,10 +354,110 @@ a{
          
 
      /* logo end */
+     /* banner */
+     .banner{
+          
+     }
+     /* input */
+     .input-container{
+          flex-direction: column;
+          width: 80%;
+          text-align: center;
+          justify-content: center;
+          margin: 0 auto;
+
+     }
+     .input-item{
+          display: flex;
+          margin-top: 20px;
+     }
+
+
+     .banner-content{
+          padding-top: 0px;
+     }
+     .banner-title{
+          font-family: Mulish;
+          font-size: 22px;
+          font-weight: 800;
+          line-height: 80px;
+          padding-bottom: 5px;
+     }
+     .primary-description{
+          font-family: Mulish;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 26px;
+          letter-spacing: 0em;
+          text-align: center;
+          padding-bottom: 5px;
+     
+     }
+     /* popular */
+
+     section{
+          margin-top: 10px;
+     }
+     .popular-container{
+          flex-direction: column;
+          text-align: left;   
+     }
+     .popular-container img{
+          width: 350px;
+          height: 350px;
+     }
+     .popular-title{
+          font-size: 20px;
+          line-height: 25px;
+          text-align: left; 
+          padding-bottom: 10px;  
+
+     }
+     .popular-description{
+          font-family: Mulish;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          padding-bottom: 10px;            
+     }
+     .popular-list-container{
+          font-family: Mulish;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          padding-bottom: 10px; 
+     }
+     
+     .popular-last-description{
+          font-family: Mulish;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          padding-bottom: 10px;  
+     }
+     .btn-primary{
+          margin-bottom: 10px;
+          font-family: Mulish;
+          font-size: 13px;
+          font-weight: 800;
+          line-height: 25px;
+          letter-spacing: 0em;
+          text-align: center;
+     }
+      /* popular end*/
      
 }
 
-/* tablet or medium devices */
+
+
+
+/* =======================================tablet or medium devices===================================================== */
 
 @media screen and (min-width:601px) and (max-width:991px) {
      .primary-title{
@@ -264,6 +525,46 @@ a{
           left: 0;
      }
        /* nav end */
+        /* popular */
+     .popular-container{
+          flex-direction: column;
+     }
+     .popular-title{
+          font-size: 20px;
+          font-weight: 800;
+          line-height: 25px;
+          text-align: center;
+
+     }
+     .popular-description{
+          font-family: Mulish;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;          
+     }
+     .popular-list-container{
+          font-family: Mulish;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+
+     
+     }
+     
+     .popular-last-description{
+          font-family: Mulish;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+     }
+      /* popular end*/
+     
    
 }
 
