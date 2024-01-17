@@ -378,19 +378,74 @@ section{
 }
 
 .contact-us{
-     border: 1px solid #131318;
+     border: 1px solid #FF5400;
      border-radius: 16px;
-     height: 500px;
+     height: 400px;
      width: 60%;
-     padding: 20px;
+     padding: 60px 20px 20px 30px;
 }
+
+
 
 .newsletter-container img{
      width: 600px;
-     height: 500px;
+     height: 400px;
 
 }
 
+.newsletter-title{
+     font-family: Mulish;
+     font-size: 24px;
+     font-weight: 800;
+     line-height: 30px;
+     letter-spacing: 0em;
+     text-align: left;
+     padding-bottom: 10px;
+
+}
+
+.newsletter-description{
+     font-family: Mulish;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 26px;
+     letter-spacing: 0em;
+     text-align: left;
+     color: #5A5A5D;
+     padding-bottom: 10px;
+
+}
+
+
+.input-field-text-you{
+     background-color: #1313180D;
+     padding: 18px 247px 18px 45px;
+     border-radius: 8px;
+}
+
+.hrcolor{
+     border-top: 1px solid #1313181A;
+     margin: 20px 20px 10px 0px;
+}
+
+.input-field-one{
+     padding-top: 20px;
+     padding-bottom: 20px;
+
+}
+
+.input-field-sub{
+     text-align: center;
+     justify-content: center;
+     border-radius: 8px;
+     background-color: #FF5400;
+     margin-top: 20px;
+}
+.input-field-sub input{
+     background-color: #FF5400;
+     color: white;
+     padding: 12px 34px;
+}
 
 
 
