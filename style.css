@@ -70,17 +70,24 @@ a{
      justify-content: space-between;
      align-items: center;
      display: flex;
-     gap: 10px;
-     font-size: 36px;
+     font-size: 25px;
      font-weight: 800;
-     line-height: 45px;
+     line-height: 35px;
      letter-spacing: 0em;
      text-align: left;
+     margin-right: -10px;
+
 }
 
 .logotwo{
      color: var(--accent);
 
+}
+.logo img{
+     width: 60%;
+}
+.logotextlogo{
+     width: 200px;
 }
 
 /* logo end */
@@ -447,8 +454,55 @@ section{
      padding: 12px 34px;
 }
 
+.footer{
+     padding: 0px 60px;
+     height: 300px;
+}
+.logo-footer{
+     text-align: center;
+     justify-content: center;
+     margin: 100px 0px 16px 0px;
+}
 
+.logo-footer img{
+     width: 12%;
+}
 
+.hrfooter{
+     margin: 10px 200px;
+     border-top: 1px solid #1313181A;
+
+}
+
+.socialmedia{
+     text-align: center;
+     justify-content: center;
+     margin-bottom: 20px;
+}
+.socialmedia a{
+     margin-left: 20px;
+}
+
+.footer-description{
+     font-family: Mulish;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 26px;
+     letter-spacing: 0em;
+     text-align: center;
+     margin-top: 10px;
+
+}
+.footer-copy{
+     font-family: Inter;
+     font-size: 16px;
+     font-weight: 300;
+     line-height: 19px;
+     letter-spacing: 0em;
+     text-align: center;
+     margin-top: 40px;
+
+}
 
 /* ======================================================== */
 /* responsive for mobile */
